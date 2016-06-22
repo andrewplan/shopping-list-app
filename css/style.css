@@ -1,0 +1,111 @@
+body {
+    background-image: url("https://images.unsplash.com/photo-1422919869950-5fdedb27cde8?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=8c43096ed2514cc3cac2e36743501c6b");
+    background-size: cover;
+    
+}
+
+.content {
+	width: 700px;
+	height: 800px;
+	margin: 0 auto;
+	padding: 0px 15px;
+	box-sizing: border-box;
+    background-image: url("https://farm8.static.flickr.com/7175/6507071627_8c9d17f7e8_m.jpg");
+    background-size: cover;
+    font-family: 'Dancing Script', cursive;
+}
+
+h1 {
+    margin-top: 2em;
+    padding-top: 1em;
+    margin-left: 1.5em;
+    text-align: center;
+    font-size: 3em;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+.budget-summary {
+    margin-left: 4.5em;
+    list-style: none;
+    display: inline-flex;
+    text-align: center;
+}
+
+.budget-summary > li {
+    width: 12em;
+    margin-left: 2em;
+}
+
+.budget-summary > li > p {
+    font-size: 1.9em;
+}
+
+.column-names {
+    list-style: none;
+    display: inline-flex;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.column-names > div {
+    width: 25%;
+}
+
+.column-names > div:not(#item-column) {
+    text-align: right;
+}
+
+.shopping-items {
+    display: block;
+    list-style: none;
+    font-size: 1.5em;
+}
+
+.shopping-items > li {
+    width: 75%;
+    margin-left: 4em;
+    margin-top: .5em;
+    display: inline-flex;
+}
+
+.item {
+    width: 25%;
+}
+
+.unit-price {
+    width: 25%;
+    margin-left: 0.1rem;
+    text-align: right;
+}
+
+.quantity {
+    width: 25%;
+    margin-left: 0.1rem;
+    text-align: right;
+}
+
+.cost {
+    width: 25%;
+    margin-left: 0.5rem; 
+    text-align: right;
+}
+
+li.crossout {
+    text-decoration: line-through;
+}
+
+.total {
+    float: right;
+    margin-top: 1em;
+    margin-right: 2.4em;
+    font-size: 1.5em;
+    text-align: right;
+    font-weight: bold;
+}
+
+.total > div {
+    margin-bottom: .5em;
+}
