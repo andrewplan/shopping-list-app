@@ -40,17 +40,19 @@ $(document).ready(function(){
          costValueArray.push(costValue);
          console.log(costValue);
          if ( event.keyCode == 13 ) {
-            $( ".shopping-items" ).append( "<li>" + itemValue + unitPriceValue + quantityValue + costValue + "</li>" );
+            $( ".shopping-items" ).append( "<li>" + "<span class=item-value-output>" + itemValue + "</span>" + "<span>" + unitPriceValue + "</span>" + "<span>" + quantityValue + "</span>" + "<span>" + costValue + "</span>" + "</li>" );
              console.log(itemValue, unitPriceValue, quantityValue, costValue);
              $("input").val("");
             };
       })    
          .keyup();
     
-    $(".total").children().first().append(function() {
-        var sum = 0;
-        $.each(costValueArray,function(){sum+=parseFloat(this) || 0;});
-        console.log(sum);
+    $(".subtotal").append(function() {
+        var total = 0;
+        for (var i = 0; i < costValueArray.length; i++) {
+            total += costValueArray[i] << 0;
+            console.log(total);
+        }
     });
 
         $('ul').on('click', 'li:not(.column-names, .inputs)', function(event){

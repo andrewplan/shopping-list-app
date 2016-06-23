@@ -86,6 +86,15 @@ h2 {
     margin-left: 1em;
 }
 
+span {
+    width: 25%;
+}
+
+span:not(.item-value-output) {
+    margin-left: 5.3em;
+    text-align: right;
+}
+
 .item-output {
     width: 25%;
 }
