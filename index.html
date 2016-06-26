@@ -8,7 +8,7 @@
     <link href='https://fonts.googleapis.com/css?family=Dancing+Script' rel='stylesheet' type='text/css'>
 </head>
 <body>
-    <div class=content>
+    <section class=content> <!--"section" instead-->
         <h1>Stick to Yo Budget!</h1>
         <ul class=budget-summary>
             <li class=budget>
@@ -27,7 +27,7 @@
                 <div>Quantity</div>
                 <div>Cost</div>
             </li>
-            <li class=inputs>
+            <li class=inputs> <!--look at html forms to execute JS.  put it outside of the list. document getelementby ... clear the input boxes.  scales.  Look at W3 school for input forms examples, play with them.  Then once you understand, go back to MDN to thoroughly learn it. -->
                 <input class=item-input type="text" value="">
                 <input class=unit-price-input type="text" value="">
                 <input class=quantity-input type="text" value="">
@@ -58,7 +58,7 @@
                 <div class=cost>$199.00</div>
             </li>-->
         </ul>
-        <div class=total>
+        <div class=total> <!--will want JS to calculate total by reading each li item.  Then you don't have to deal with arrays, etc. document.getElementByClassName()-->
             <div class=subtotal>Subtotal:</div>
             <div>Tax (TX @ 8.25%): $18.64</div>
             <div>Total: $244.62</div>
