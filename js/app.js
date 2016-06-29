@@ -1,8 +1,3 @@
-var itemValue;
-var unitPriceValue;
-var quantityValue;
-var costValue;
-
 $(document).ready(function(){
     $( "form" )
         .submit(function(event) {
