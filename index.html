@@ -12,58 +12,30 @@
         <h1>Stick to Yo Budget!</h1>
         <ul class=budget-summary>
             <li class=budget>
-                <h2>Budget:</h2>
-                <p>$1000</p>
+                <h2>Budget:</h2><input type=number>
             </li>
-            <li class=money-left>
+            <!--<li class=money-left>
                 <h2>Money left:</h2>
-                <p>$755.38</p>
-            </li>
+            </li> -->
         </ul>
+        <form>
+            Item:
+            <input class=item-value type="text">
+            <input class=add type="submit" value="add">
+        </form>
         <ul class=shopping-items>
-            <li class=column-names>
-                <div id=item-column>Item</div>
-                <div>Unit Price</div>
-                <div>Quantity</div>
-                <div>Cost</div>
-            </li>
-            <li class=inputs> <!--look at html forms to execute JS.  put it outside of the list. document getelementby ... clear the input boxes.  scales.  Look at W3 school for input forms examples, play with them.  Then once you understand, go back to MDN to thoroughly learn it. -->
-                <input class=item-input type="text" value="">
-                <input class=unit-price-input type="text" value="">
-                <input class=quantity-input type="text" value="">
-                <input class=cost-input type="text" value="">
-            </li>
-            <!--<li class=outputs>
-                <div class="item-output"></div>
-                <div class="unit-price-output">$</div>
-                <div class="quantity-output"></div>
-                <div class="cost-output"></div>
-            </li>
+            <!--look at html forms to execute JS.  put it outside of the list. document getelementby ... clear the input boxes.  scales.  Look at W3 school for input forms examples, play with them.  Then once you understand, go back to MDN to thoroughly learn it. -->
             <li>
-                <div class=item>Carton of eggs</div>
-                <div class=unit-price>$1.99</div>
-                <div class=quantity>1</div>
-                <div class=cost>$1.99</div>
+                <input class=delete type='button' value='delete'>
+                <input class=checkboxes type='checkbox'> Chicken 
             </li>
-            <li>
-                <div class=item>Shoes</div>
-                <div class=unit-price>$24.99</div>
-                <div class=quantity>2</div>
-                <div class=cost>$49.98</div>
-            </li>
-            <li class=crossout>
-                <div class=item>Bicycle</div>
-                <div class=unit-price>$199.00</div>
-                <div class=quantity>1</div>
-                <div class=cost>$199.00</div>
-            </li>-->
         </ul>
-        <div class=total> <!--will want JS to calculate total by reading each li item.  Then you don't have to deal with arrays, etc. document.getElementByClassName()-->
+        <!--<div class=total> will want JS to calculate total by reading each li item.  Then you don't have to deal with arrays, etc. document.getElementByClassName()
             <div class=subtotal>Subtotal:</div>
             <div>Tax (TX @ 8.25%): $18.64</div>
             <div>Total: $244.62</div>
-        </div>
-    </div>
+        </div>-->
+    </section>
     <script src="https://code.jquery.com/jquery-latest.min.js"></script>
 	<script src="js/app.js"></script>
 </body>

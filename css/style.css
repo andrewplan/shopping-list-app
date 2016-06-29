@@ -29,11 +29,17 @@ h2 {
 }
 
 .budget-summary {
-    margin-left: 4.5em;
+    margin-left: 11.5em;
     list-style: none;
     display: inline-flex;
     text-align: center;
     height: 125px;
+}
+
+form {
+    margin-top: 1em;
+    margin-left: 5.7em;
+    font-size: 1.5em;
 }
 
 .budget-summary > li {
@@ -73,35 +79,14 @@ h2 {
     display: inline-flex;
 }
 
-.inputs {
-    text-align: right;
+.delete {
+    margin-right: 1em;
+    font-size: .8em;
 }
 
-.item-input {
-    width: 25%;
-}
-
-.unit-price-input, .quantity-input, .cost-input {
-    width: 25%;
-    margin-left: 1em;
-}
-
-span {
-    width: 25%;
-}
-
-span:not(.item-value-output) {
-    margin-left: 5.3em;
-    text-align: right;
-}
-
-.item-output {
-    width: 25%;
-}
-
-.unit-price-output, .quantity-output, .cost-output {
-    width: 25%;
-    text-align: right;
+.checkboxes {
+    margin-top: .3em;
+    margin-right: .5em;
 }
 
 .item {
