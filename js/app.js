@@ -12,6 +12,5 @@ $(document).ready(function(){
         // including LIs that aren't on the page when it is initially loaded
         $( this ).parent().remove();
         });
-        
 });
 
