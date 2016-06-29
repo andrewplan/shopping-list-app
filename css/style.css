@@ -66,13 +66,13 @@ form {
     text-align: right;
 }
 
-.shopping-items {
+.shopping-list {
     display: block;
     list-style: none;
     font-size: 1.5em;
 }
 
-.shopping-items > li {
+.shopping-list > li {
     width: 75%;
     margin-left: 4em;
     margin-top: .5em;
@@ -89,26 +89,8 @@ form {
     margin-right: .5em;
 }
 
-.item {
-    width: 25%;
-}
-
-.unit-price {
-    width: 25%;
-    margin-left: 0.1rem;
-    text-align: right;
-}
-
-.quantity {
-    width: 25%;
-    margin-left: 0.1rem;
-    text-align: right;
-}
-
-.cost {
-    width: 25%;
-    margin-left: 0.5rem; 
-    text-align: right;
+.shopping-list > li > span {
+    margin-left: 1.5em;
 }
 
 li.crossout {

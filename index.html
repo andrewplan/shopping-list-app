@@ -20,21 +20,33 @@
         </ul>
         <form>
             Item:
-            <input class=item-value type="text">
+            <input class=item-value type="text"><br>
+            Quantity:
+            <input class=quantity-value type="decimal"><br>
+            Unit Price:
+            <input class=unit-price-value type="decimal"><br>
             <input class=add type="submit" value="add">
         </form>
-        <ul class=shopping-items>
+        <ul class=shopping-list>
             <!--look at html forms to execute JS.  put it outside of the list. document getelementby ... clear the input boxes.  scales.  Look at W3 school for input forms examples, play with them.  Then once you understand, go back to MDN to thoroughly learn it. -->
-            <!--<li>
+            <li class=shopping-items>
                 <input class=delete type='button' value='delete'>
                 <input class=checkboxes type='checkbox'> Chicken 
-            </li>-->
+                <span>(2)</span>
+                <span class=cost-output>3.98</span>
+            </li>
+            <li class=shopping-items>
+                <input class=delete type='button' value='delete'>
+                <input class=checkboxes type='checkbox'> Watermelon
+                <span>(1)</span>
+                <span class=cost-output>2.00</span>
+            </li>
         </ul>
-        <!--<div class=total> will want JS to calculate total by reading each li item.  Then you don't have to deal with arrays, etc. document.getElementByClassName()
+       <div class=total> <!--will want JS to calculate total by reading each li item.  Then you don't have to deal with arrays, etc. document.getElementByClassName() -->
             <div class=subtotal>Subtotal:</div>
             <div>Tax (TX @ 8.25%): $18.64</div>
             <div>Total: $244.62</div>
-        </div>-->
+        </div>
     </section>
     <script src="https://code.jquery.com/jquery-latest.min.js"></script>
 	<script src="js/app.js"></script>
