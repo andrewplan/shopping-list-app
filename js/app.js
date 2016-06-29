@@ -17,40 +17,6 @@ $(document).ready(function(){
         // including LIs that aren't on the page when it is initially loaded
         $( this ).parent().remove();
         });
-
-   /* $( "input.unit-price-input" )
-        .keyup(function() {
-        unitPriceValue = $( this ).val();
-        unitPriceValueArray.push(unitPriceValue);
-        console.log(unitPriceValue);
-      })
-        .keyup();
-
-    $( "input.quantity-input" )
-        .keyup(function() {
-        quantityValue = $( this ).val();
-        quantityValueArray.push(quantityValue);
-        console.log(quantityValue);
-      })
-        .keyup();
-
-     $( "input.cost-input" )
-        .keyup(function() {
-         costValue = $( this ).val();
-         costValueArray.push(costValue);
-         console.log(costValue);
-      })    
-         .keyup(); 
-         
-    $(".subtotal").append(function() {
-        var total = 0;
-        for (var i = 0; i < costValueArray.length; i++) {
-            total += costValueArray[i] << 0;
-            console.log(total);
-        }
-    });*/
-    
-
         
 });
 
