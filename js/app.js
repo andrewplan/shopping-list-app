@@ -1,12 +1,5 @@
 $(document).ready(function(){
     
-<<<<<<< HEAD
-    $('ul').on('click', 'input.delete', function(event){
-        // fires when any LIs are clicked on
-        // including LIs that aren't on the page when it is initially loaded
-        $( this ).parent().remove();
-        });
-=======
     function getTotalCost () {
         var allItemCosts = document.getElementsByClassName("cost-output");
         var iter = 0;
@@ -58,8 +51,6 @@ $(document).ready(function(){
         getTotalCost();
     });
              
-   
-        
     $(document).on('change', 'input:checkbox', function(){
         var input = $(this).siblings('span');
         if (this.checked) {
@@ -68,6 +59,6 @@ $(document).ready(function(){
             $(input).css('textDecoration', 'none');
         }
     });
->>>>>>> ad61c34c8d2094adb49160a84a5af2bf714ff45b
+
 });
 
