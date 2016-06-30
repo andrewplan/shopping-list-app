@@ -6,12 +6,13 @@ body {
 
 .content {
 	width: 700px;
-	height: 800px;
+	min-height: 800px;
 	margin: 0 auto;
 	padding: 0px 15px;
 	box-sizing: border-box;
-    background-image: url("https://farm8.static.flickr.com/7175/6507071627_8c9d17f7e8_m.jpg");
-    background-size: cover;
+    background-image: url("../images/sticker.jpg");
+    background-repeat: repeat-y;
+    background-size: 100%;
     font-family: 'Dancing Script', cursive;
 }
 
@@ -24,46 +25,65 @@ h1 {
     height: 20px;
 }
 
-h2 {
-    font-size: 2em;
-}
-
-.budget-summary {
-    margin-left: 11.5em;
-    list-style: none;
+#budget-summary {
+    height: 50px;
+    width: 700px;
+    margin-top: 1.3em;
+    margin-left: 7.5em;
     display: inline-flex;
     text-align: center;
-    height: 125px;
+    font-size: 1.7em;
 }
 
-form {
-    margin-top: 1em;
-    margin-left: 5.7em;
+.money-left {
+    margin-left: 7.5em;
+    font-size: 1.7em;
+}
+
+#POST-budget {
+    width: 4em;
+    margin-left: 0.3em;
+    margin-bottom: 0.4em;
+}
+
+.update {
+    margin-left: 0.6em;
+    margin-bottom: 0.4em;
+}
+
+#item-input {
+    width: 400px;
+    margin-top: 1.5em;
+    margin-left: 3.8em;
+    padding-left: 5.5em;
     font-size: 1.5em;
 }
 
-.budget-summary > li {
-    width: 12em;
-    margin-left: 2em;
+#item-input > input {
+    width: 6em;
 }
 
-.budget-summary > li > p {
-    font-size: 1.9em;
+#POST-item-value {
+    margin-left: 1.97em;
+}
+
+#POST-quantity-value {
+    margin-left: 0.46em;
+}
+
+.add {
+    margin-top: 1em;
+    margin-left: 2.4em;
 }
 
 .column-names {
+    margin-top: 1.8em;
+    margin-left: 6.8em;
     list-style: none;
     display: inline-flex;
+    font-size: 1.5em;
     font-weight: bold;
     text-decoration: underline;
-}
-
-.column-names > div {
-    width: 25%;
-}
-
-.column-names > div:not(#item-column) {
-    text-align: right;
 }
 
 .shopping-list {
@@ -80,7 +100,7 @@ form {
 }
 
 .delete {
-    margin-right: 1em;
+    margin-left: 2em;
     font-size: .8em;
 }
 
@@ -89,8 +109,13 @@ form {
     margin-right: .5em;
 }
 
-.shopping-list > li > span {
-    margin-left: 1.5em;
+.item-name-column, .item-name-output {
+    width: 4em;
+}
+
+.quantity-column, .cost-column, .quantity-output, .cost-output {
+    text-align: right;
+    width: 5em;
 }
 
 li.crossout {
@@ -98,9 +123,10 @@ li.crossout {
 }
 
 .total {
-    float: right;
-    margin-top: 1em;
-    margin-right: 2.4em;
+    margin-top: 2em;
+    margin-right: 9.4em;
+    margin-bottom: 2em;
+    padding-bottom: 2em;
     font-size: 1.5em;
     text-align: right;
     font-weight: bold;
