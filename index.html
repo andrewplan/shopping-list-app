@@ -8,21 +8,21 @@
     <link href='https://fonts.googleapis.com/css?family=Dancing+Script' rel='stylesheet' type='text/css'>
 </head>
 <body>
-    <section class=content> <!--"section" instead-->
+    <section class=content> 
         <h1>Stick to Yo Budget!</h1>
         <form id=budget-summary action="" method="post">
             <label for="POST-budget">Budget: $</label>
-            <input id=POST-budget type="decimal">
+            <input id=POST-budget type="decimal" required>
             <input class=update type="submit" value="update">
         </form>
         <span class=money-left>Money left: $<span id=money-left-output></span></span>
         <form id=item-input action="" method="post">
             <label for="POST-item-value">Item:</label>
-            <input id=POST-item-value type="text"><br>
+            <input id=POST-item-value type="text" required><br>
             <label for="POST-quantity-value">Quantity:</label>
-            <input id=POST-quantity-value type="decimal"><br>
+            <input id=POST-quantity-value type="decimal" required><br>
             <label for="POST-unit-price-value">Unit Price:</label>
-            <input id=POST-unit-price-value type="decimal"><br>
+            <input id=POST-unit-price-value type="decimal" required><br>
             <input class=add type="submit" value="add">
         </form>
         <div class=column-names>

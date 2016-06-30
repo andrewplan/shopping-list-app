@@ -9,7 +9,7 @@ $(document).ready(function(){
 
         for (iter = 0; iter < allItemCosts.length; ++iter) {
                 totalCost = totalCost + Number(allItemCosts[iter].innerHTML);
-                budgetLeft = Number(budget - totalCost);
+                budgetLeft = Number.parseFloat(budget - totalCost);
                 console.log (totalCost);
                 $("#total").text(totalCost);
                 $("#money-left-output").text(budgetLeft);
@@ -19,9 +19,12 @@ $(document).ready(function(){
     $( "#item-input" )
         .submit(function(event) {
             event.preventDefault();
-            var itemValue = $( "#POST-item-value" ).val();
-            var quantityValue = $( "#POST-quantity-value" ).val();
-            var unitPriceValue = $( "#POST-unit-price-value" ).val();
+            var itemValue = parseFloat($( "#POST-item-value" ).val());
+            var quantityValue = parseFloat($( "#POST-quantity-value" ).val());
+            var unitPriceValue = parseFloat($( "#POST-unit-price-value" ).val());
+            if (itemValue = "", quantityValue = "", unitPriceValue = "") {
+                alert (You must fill out all fields!);
+            }
             var costValue = quantityValue * unitPriceValue;
             $( ".shopping-list" ).append("<li class=shopping-items><input class=checkboxes type='checkbox'>" + "<span class=item-name-output>" + itemValue + "</span>" + "<span class=quantity-output>" + "(" + quantityValue + ")" + "</span>" + "<span class=cost-output>" + costValue + "</span>" + "<input class=delete type='button' value='delete'></li>").show();
             $( "#POST-item-value" ).val("");
