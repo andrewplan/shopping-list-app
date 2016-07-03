@@ -8,6 +8,8 @@
     <link href='https://fonts.googleapis.com/css?family=Dancing+Script' rel='stylesheet' type='text/css'>
 </head>
 <body>
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+	<script src="js/app.js"></script>
     <section class=content> 
         <h1>Stick to Yo Budget!</h1>
         <form id=budget-summary>
@@ -15,7 +17,10 @@
             <input id=POST-budget type="decimal" required>
             <input class=update type="submit" value="update">
         </form>
-        <span class=money-left>Money left: $<span id=money-left-output></span></span>
+        <span class=money-left>Money left: $<span id=money-left-output></span></span><br/>
+        <div class=instructions>
+            <span class=add-an-item>Add an item:</span>
+        </div>
         <form id=item-input>
             <label for="POST-item-value">Item:</label>
             <input id=POST-item-value type="text" required><br>
@@ -31,8 +36,7 @@
             <span class=cost-column>Cost</span>
         </div>
         <ul class=shopping-list>
-            <!--look at html forms to execute JS.  put it outside of the list. document getelementby ... clear the input boxes.  scales.  Look at W3 school for input forms examples, play with them.  Then once you understand, go back to MDN to thoroughly learn it. -->
-            <li class=shopping-items>
+            <!--<li class=shopping-items>
                 <input class=checkboxes type='checkbox'> 
                 <span class=item-name-output>Chicken</span> 
                 <span class=quantity-output>(2)</span>
@@ -45,13 +49,11 @@
                 <span class=quantity-output>(1)</span>
                 <span class=cost-output>2.00</span>
                 <input class=delete type='button' value='delete'>
-            </li>
+            </li>-->
         </ul>
        <div class=total> 
             <div><span>Total: $</span><span id="total"></span></div>
         </div>
     </section>
-    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
-	<script src="js/app.js"></script>
 </body>
 </html>
