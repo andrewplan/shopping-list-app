@@ -40,7 +40,7 @@ h1 {
     font-size: 1.7em;
 }
 
-#POST-budget {
+#budget {
     width: 4em;
     margin-left: 0.3em;
     margin-bottom: 0.4em;
@@ -63,11 +63,11 @@ h1 {
     width: 6em;
 }
 
-#POST-item-value {
+#item-value {
     margin-left: 1.97em;
 }
 
-#POST-quantity-value {
+#quantity-value {
     margin-left: 0.46em;
 }
 

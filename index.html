@@ -12,30 +12,30 @@
 	<script src="js/app.js"></script>
     <section class=content> 
         <h1>Stick to Yo Budget!</h1>
-        <form id=budget-summary>
-            <label for="POST-budget">Budget: $</label>
-            <input id=POST-budget type="decimal" required>
-            <input class=update type="submit" value="update">
+        <form id="budget-summary"> <!-- action="javascript:(function)" method="get" -->
+            <label for="budget">Budget: $</label>
+            <input id="budget" type="decimal" required>
+            <input class="update" type="submit" value="update">
         </form>
-        <span class=money-left>Money left: $<span id=money-left-output></span></span><br/>
-        <div class=instructions>
-            <span class=add-an-item>Add an item:</span>
+        <span class="money-left">Money left: $<span id="money-left-output"></span></span><br/>
+        <div class="instructions">
+            <span class="add-an-item">Add an item:</span>
         </div>
-        <form id=item-input>
-            <label for="POST-item-value">Item:</label>
-            <input id=POST-item-value type="text" required><br>
-            <label for="POST-quantity-value">Quantity:</label>
-            <input id=POST-quantity-value type="decimal" required><br>
-            <label for="POST-unit-price-value">Unit Price:</label>
-            <input id=POST-unit-price-value type="decimal" required><br>
+        <form id="item-input">
+            <label for="item-value">Item:</label>
+            <input id="item-value" type="text" required><br>
+            <label for="quantity-value">Quantity:</label>
+            <input id="quantity-value" type="decimal" required><br>
+            <label for="unit-price-value">Unit Price:</label>
+            <input id="unit-price-value" type="decimal" required><br>
             <input class=add type="submit" value="add">
         </form>
-        <div class=column-names>
-            <span class=item-name-column>Item</span> 
-            <span class=quantity-column>Quantity</span>
-            <span class=cost-column>Cost</span>
+        <div class="column-names">
+            <span class="item-name-column">Item</span> 
+            <span class="quantity-column">Quantity</span>
+            <span class="cost-column">Cost</span>
         </div>
-        <ul class=shopping-list>
+        <ul class="shopping-list">
             <!--<li class=shopping-items>
                 <input class=checkboxes type='checkbox'> 
                 <span class=item-name-output>Chicken</span> 
@@ -51,7 +51,7 @@
                 <input class=delete type='button' value='delete'>
             </li>-->
         </ul>
-       <div class=total> 
+       <div class="total"> 
             <div><span>Total: $</span><span id="total"></span></div>
         </div>
     </section>

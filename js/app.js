@@ -1,5 +1,7 @@
 $(document).ready(function () {
+    
     $(".column-names").hide();
+    
     function getTotalCost() {
         var allItemCosts = document.getElementsByClassName("cost-output");
         var iter = 0;
@@ -7,11 +9,11 @@ $(document).ready(function () {
         var budgetLeft = 0;
         var budget;
         
-        if ($( "#POST-budget" ).val() == "") {
+        if ($( "#budget" ).val() == "") {
             budget = 0
         }
         else {
-            budget = parseFloat($( "#POST-budget" ).val());
+            budget = parseFloat($( "#budget" ).val());
         }
         
         if (allItemCosts.length === 0) {
@@ -24,7 +26,7 @@ $(document).ready(function () {
                     totalCost = totalCost + Number(allItemCosts[iter].innerHTML);
                     budgetLeft = Number(budget - totalCost);
                     console.log (totalCost);
-                    $("#total").text(totalCost.toFixed(2));
+                 $("#total").text(totalCost.toFixed(2));
                     $("#money-left-output").text(budgetLeft.toFixed(2));
             }
         }
@@ -37,17 +39,17 @@ $(document).ready(function () {
     
     $("#item-input").submit(function() {
         event.preventDefault();
-        var itemValue = $( "#POST-item-value" ).val();
-        var quantityValue = $( "#POST-quantity-value" ).val();
-        var unitPriceValue = $( "#POST-unit-price-value" ).val();
+        var itemValue = $( "#item-value" ).val();
+        var quantityValue = $( "#quantity-value" ).val();
+        var unitPriceValue = $( "#unit-price-value" ).val();
         var costValue = quantityValue * unitPriceValue;
         
         $(".column-names").show();
         if(quantityValue.match(/^(?:\d*\.\d{1,2}|\d+)$/) && unitPriceValue.match(/^(?:\d*\.\d{1,2}|\d+)$/)) {
-            $( ".shopping-list" ).append("<li class=shopping-items><input class=checkboxes type='checkbox'>" + "<span class=item-name-output>" + itemValue + "</span>" + "<span class=quantity-output>" + "(" + quantityValue + ")" + "</span>" + "<span class=cost-output>" + Math.round(costValue).toFixed(2) + "</span>" + "<input class=delete type='button' value='delete'></li>").show();
-            $( "#POST-item-value" ).val("");
-            $( "#POST-quantity-value" ).val("");
-            $( "#POST-unit-price-value" ).val("");
+            $( ".shopping-list" ).append("<li class='shopping-items'><input class=checkboxes type='checkbox'>" + "<span class='item-name-output'>" + itemValue + "</span>" + "<span class='quantity-output'>" + "(" + quantityValue + ")" + "</span>" + "<span class='cost-output'>" + Math.round(costValue).toFixed(2) + "</span>" + "<input class=delete type='button' value='delete'></li>").show();
+            $( "#item-value" ).val("");
+            $( "#quantity-value" ).val("");
+            $( "#unit-price-value" ).val("");
             getTotalCost();
         }
         else {
